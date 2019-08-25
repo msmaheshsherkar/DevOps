@@ -1,0 +1,21 @@
+---
+
+fruits:
+	Banana:
+	  -
+		Protain: 15
+		Fibre: 0.2
+		Carb: 44
+	Apple:
+	  - 
+		Protain: 5
+                Fibre: 2
+                Carb: 4
+	Pinapple:
+	  -
+		Protain: 55
+                Fibre: 5
+                Carb: 4
+
+...
+	
