@@ -2,8 +2,19 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-      steps {
-        sh 'sh "mv install clear"'
+      parallel {
+        stage('Build') {
+          steps {
+            sh 'sh "mv install clear"'
+          }
+        }
+
+        stage('StageBuid') {
+          steps {
+            echo 'Build Successful'
+          }
+        }
+
       }
     }
 
